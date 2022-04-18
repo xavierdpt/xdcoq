@@ -150,7 +150,7 @@
   (* are equal.                                                                       *)
   (* It's not necessary to define feq_r, because f_eq can be used in this case,       *)
   (* because of currying.                                                             *)
-  Lemma feq_l {A B C:Type} : forall (f:A->B->C) n m k, n = m -> f k n = f k m.
+  Lemma feq_l {A B C:Type} : forall (f:A->B->C) n m k, n = m -> f n k = f m k.
   Proof.
     intro f.
     intros n m k.
