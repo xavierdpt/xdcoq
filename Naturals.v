@@ -885,6 +885,7 @@
   Proof.
     (* I don't understand this proof very well *)
     red. intro a.
+Print Acc.
     (* We have to prove this *)
     apply Acc_intro.
     (* So we know 'a', and we have to prove that for any 'y' that is strictly less *)
